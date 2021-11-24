@@ -20,9 +20,12 @@ float ptX13, ptY13;
 float ptX14, ptY14;
 float ptX15, ptY15;
 float ptX16, ptY16;
+float y=1080;
+float x=1920;
 void setup() 
 {
   fullScreen();
+  noLoop();
   //
   //Population
   ptY1 = ptY2 = ptY3 = ptY4 = displayHeight*0; 
@@ -55,42 +58,43 @@ void setup()
 
 void draw()
 {  
+  frameRate(random(50, 60));
   fill(color(random(255), random(255), random(255)));
   rect(ptX1, ptY1, recrWidth, rectHeight);
   // 
   fill(color(random(255), random(255), random(255)));
   rect(ptX2, ptY2, recrWidth, rectHeight);
-    // 
+  // 
   fill(color(random(255), random(255), random(255)));
   rect(ptX3, ptY3, recrWidth, rectHeight);
-    // 
+  // 
   fill(color(random(255), random(255), random(255)));
   rect(ptX4, ptY4, recrWidth, rectHeight);
-    // 
+  // 
   fill(color(random(255), random(255), random(255)));
   rect(ptX5, ptY5, recrWidth, rectHeight);
-    // 
+  // 
   fill(color(random(255), random(255), random(255)));
   rect(ptX6, ptY6, recrWidth, rectHeight);
-    // 
+  // 
   fill(color(random(255), random(255), random(255)));
   rect(ptX6, ptY6, recrWidth, rectHeight);
-    // 
+  // 
   fill(color(random(255), random(255), random(255)));
   rect(ptX7, ptY7, recrWidth, rectHeight);
-    // 
+  // 
   fill(color(random(255), random(255), random(255)));
   rect(ptX8, ptY8, recrWidth, rectHeight);
-    // 
+  // 
   fill(color(random(255), random(255), random(255)));
   rect(ptX9, ptY9, recrWidth, rectHeight);
-    // 
+  // 
   fill(color(random(255), random(255), random(255)));
   rect(ptX10, ptY10, recrWidth, rectHeight);
-    // 
+  // 
   fill(color(random(255), random(255), random(255)));
   rect(ptX11, ptY11, recrWidth, rectHeight);
-    // 
+  // 
   fill(color(random(255), random(255), random(255)));
   //
   fill(color(random(255), random(255), random(255)));
@@ -111,10 +115,16 @@ void draw()
   ellipse(ptX15, ptY15, circleDiameter15, circleDiameter15);
   ellipse(ptX16, ptY16, circleDiameter16, circleDiameter16);
   fill(white);
-}//Edn draw()
-
+  //
+  line(0, y, x, y);  
+  y = y - 1; 
+  if (y < 0) { 
+    y = displayWidth;
+  }
+} 
 void mousePressed() 
-{
+{  loop();
+if (mousePressed) {redraw();} else {loop();};
 }// End mousePressed()
 
 void keyPressed() 
