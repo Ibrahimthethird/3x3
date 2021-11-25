@@ -133,6 +133,7 @@ void mousePressed()
     redraw();
   } else {
     loop();
+    if (frameRate = 60){} else{};
   };
 }// End mousePressed()
 
