@@ -1,23 +1,28 @@
 //Global Variables
-float buttonX, buttonY, buttonWidth, buttonHeight;
-void setup() {
+float buttonX1, buttonY1, buttonWidth1, buttonHeight1;
+float buttonX2, buttonY2, buttonWidth2, buttonHeight2;
+float rectDisplayX, rectDisplayY, rectDisplayWidth, rectDisplayHeight;
+float circleX, circleY, circleWidth, circleHeight;
+
+void setup()
+{
   fullScreen();
   population();
-  //
-  buttonX = ;
-  buttonY = ;
-  buttonWidth = ;
-  buttonHeight = ;
+
 }//End setup()
 
-void draw() {
-  rect(buttonX, buttonY, buttonWidth, buttonHeight);
-}//End Draw()
+void draw()
+{
+  rect(buttonX1, buttonY1, buttonWidth1, buttonHeight1);
+  rect(buttonX2, buttonY2, buttonWidth2, buttonHeight2);
+  rect(rectDisplayX, rectDisplayY, rectDisplayWidth, rectDisplayHeight);
+  ellipse(circleX, circleY, circleWidth, circleHeight);
+}//End draw()
 
-void mousePressed() {
-  
+void mousePressed()
+{
 }//End mousePressed()
 
-void keyPressed() {
-  
+void keyPressed()
+{
 }//End keyPressed()
