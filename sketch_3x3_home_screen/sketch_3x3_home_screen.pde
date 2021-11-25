@@ -99,32 +99,66 @@ void draw()
   //
   fill(color(random(255), random(255), random(255)));
   ellipse(ptX1, ptY1, circleDiameter1, circleDiameter1);
+  //
+  fill(color(random(255), random(255), random(255)));
   ellipse(ptX2, ptY2, circleDiameter2, circleDiameter2);
+    //
+  fill(color(random(255), random(255), random(255)));
   ellipse(ptX3, ptY3, circleDiameter3, circleDiameter3);
+    //
+  fill(color(random(255), random(255), random(255)));
   ellipse(ptX4, ptY4, circleDiameter4, circleDiameter4);
+    //
+  fill(color(random(255), random(255), random(255)));
   ellipse(ptX5, ptY5, circleDiameter5, circleDiameter5);
+    //
+  fill(color(random(255), random(255), random(255)));
   ellipse(ptX6, ptY6, circleDiameter6, circleDiameter6);
+    //
+  fill(color(random(255), random(255), random(255)));
   ellipse(ptX7, ptY7, circleDiameter7, circleDiameter7);
+    //
+  fill(color(random(255), random(255), random(255)));
   ellipse(ptX8, ptY8, circleDiameter8, circleDiameter8);
+    //
+  fill(color(random(255), random(255), random(255)));
   ellipse(ptX9, ptY9, circleDiameter9, circleDiameter9);
+    //
+  fill(color(random(255), random(255), random(255)));
   ellipse(ptX10, ptY10, circleDiameter10, circleDiameter10);
+    //
+  fill(color(random(255), random(255), random(255)));
   ellipse(ptX11, ptY11, circleDiameter11, circleDiameter11);
+    //
+  fill(color(random(255), random(255), random(255)));
   ellipse(ptX12, ptY12, circleDiameter12, circleDiameter12);
+    //
+  fill(color(random(255), random(255), random(255)));
   ellipse(ptX13, ptY13, circleDiameter13, circleDiameter13);
+    //
+  fill(color(random(255), random(255), random(255)));
   ellipse(ptX14, ptY14, circleDiameter14, circleDiameter14);
+    //
+  fill(color(random(255), random(255), random(255)));
   ellipse(ptX15, ptY15, circleDiameter15, circleDiameter15);
+    //
+  fill(color(random(255), random(255), random(255)));
   ellipse(ptX16, ptY16, circleDiameter16, circleDiameter16);
+    //
+  fill(color(random(255), random(255), random(255)));
   fill(white);
   //
-  line(0, y, x, y);  
-  y = y - 1; 
-  if (y < 0) { 
-    y = displayWidth;
-  }
-} 
+  //  line(0, y, x, y);  
+  // y = y - 1; 
+  // if (y < 0) { 
+  //   y = displayWidth;
+}
+//} 
 void mousePressed() 
-{  loop();
-if (mousePressed) {redraw();} else {loop();};
+{ 
+  frameRate(2);
+ loop();
+  if (mousePressed) {redraw();} else {loop();};
 }// End mousePressed()
 
 void keyPressed() 
