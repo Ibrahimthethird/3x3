@@ -1,4 +1,8 @@
 void Population() {
+  buttonX = displayWidth*124/128;
+  buttonY = displayHeight*0/128;
+  buttonWidth = displayWidth*128/128;
+  buttonHeight = displayHeight*4/128;
   ptY1 = ptY2 = ptY3 = ptY4 = displayHeight*0; 
   ptY5 = ptY6 = ptY7 = ptY8 = displayHeight*1/3;
   ptY9 = ptY10 = ptY11 = ptY12 = displayHeight*2/3;
