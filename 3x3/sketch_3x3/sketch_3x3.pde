@@ -44,7 +44,7 @@ void draw()
   fill(resetColor);
   fill(red);
   //
-  fill(black); //fill(color(random(255), random(255), random(255)));
+  fill(red); //fill(color(random(255), random(255), random(255)));
   rect(ptX1, ptY1, recrWidth, rectHeight);
   rect(ptX2, ptY2, recrWidth, rectHeight);
   rect(ptX3, ptY3, recrWidth, rectHeight);
